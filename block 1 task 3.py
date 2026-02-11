@@ -16,10 +16,7 @@ def last_fib(n):                                #Рекурсивная функ
 with open('input_1.3.txt', 'r') as file_in:     #Открытие входного файла для чтения
     n=int(file_in.readline())
 
-if 0<=n<=10**7:                                 #Проверка соответствия диапазону условия
-    result = last_fib(n)
-else:
-    result = "Число вне диапазона"
+result = last_fib(n)
 
 with open('output_1.3.txt','w') as file_out:    #Открытие выходного файла для записи
     file_out.write(str(result))
